@@ -1,0 +1,68 @@
+{
+  "name": "myproduct",
+  "version": "0.0.0",
+  "description": "testsm",
+  "private": true,
+  "apidoc": {
+    "version": "1.0.0",
+    "title": "接口文档",
+    "name": "api-server",
+    "description": "-",
+    "url": "v1",
+    "sampleUrl": "v1",
+    "forceLanguage": "zh-cn",
+    "template": {
+      "withCompare": true,
+      "withGenerator": true
+    }
+  },
+  "scripts": {
+    "start": "NODE_ENV=prod && node ./bin/www",
+    "dev": "set NODE_ENV=dev && nodemon ./bin/www",
+    "doc": "apidoc -i controls/ -o public/apidoc",
+    "rmnode": "pkill -f node",
+    "sync": "node sync.js"
+  },
+  "dependencies": {
+    "apidoc": "^0.50.4",
+    "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^11.0.0",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "express-jwt": "^6.1.0",
+    "express-rate-limit": "^6.1.0",
+    "figlet": "^1.6.0",
+    "form-data": "^4.0.0",
+    "formidable": "^2.0.1",
+    "generic-pool": "^3.8.2",
+    "gt-push-sdk": "^4.1.1",
+    "handlebars": "^4.7.7",
+    "http-errors": "~1.6.3",
+    "JSONStream": "^1.3.5",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "log4js": "^6.9.1",
+    "module-alias": "^2.2.3",
+    "moment": "^2.29.4",
+    "mongodb": "^5.6.0",
+    "mysql2": "^3.6.0",
+    "natural": "^6.5.0",
+    "nodemailer": "^6.9.3",
+    "pm2": "^5.3.0",
+    "qiniu": "^7.4.0",
+    "redis": "^3.1.2",
+    "request": "^2.88.2",
+    "sequelize": "^6.32.1",
+    "socks-proxy-agent": "^8.0.1",
+    "stream": "^0.0.2",
+    "systeminformation": "^5.18.15",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
